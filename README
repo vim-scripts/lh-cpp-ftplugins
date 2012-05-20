@@ -1,30 +1,3 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=336
+This script has been renamed to lh-cpp.
 
-This package contains several ftplugins addressed at the edition of 
-C and C++ files. I think the C ftplugin <c_set.vim> could be used 
-with other type of files like Java, C#, etc.
-
-For a complete and quite extensive description of what is contained, 
-you can take a look at my web site :
-    http://hermitte.free.fr/vim/c.php
-and http://hermitte.free.fr/vim/ressources/vimfiles/ftplugin/c/doc/lh-cpp-readme.txt
-
-Shortly, the C control statements ('if', 'else', 'elif', 'switch', 'while', 'for') are expanded as they are typed, with respect of the context: i.e. they are not expanded within string or comment contexts. So, there is no need of having obscure keybindings to expands them.
-In Visual (/normal) mode, we can hit ',if', ',for' (',' beeing the localleader), etc to insert the control statement around the current visual selection (/line).
-If the bracketing system I propose is installed, markers (<< and >>) will be inserted. This can be very disturbing when one is not used to this addicting little feature -> "vim foo.cpp ;; :help lh-cpp-first-steps". Give it a try!
-
-Regarding the C++ part, there are some other statements (like 'try', 'catch') supported in the same way.
-
-
-More important, there are several commands (and indirectly functions) aimed at inserting C++ lines of code and comments. The two most interresting are certainly:
-(*) ;AA that will guide you all along the insertion of class attributes (member data) and their accessors and mutators (getters and setters).
-(*) ;GI that will split-open the implementation file (.cpp) and jump to the implementation of the current function-prototype under the cursor. If there is no implementation for this function, a default one will be provided on the fly.
-The main ideas regarding this facility come from Leif Wickland and Robert KellyIV ;  check vimtip#335
-
-In the archive, you will also find some other ftplugins (of interrest for C and C++ programming, like a folding plugin for C&C++, ...) that come from here (vim.sf.net), and many plugins *needed* by the ftplugins -- actually some are only recommended or useful.
-
-In the plugins, there is for instance a late customisation of Gergely Kontra's mu-template for C and C++ programming.
-
-Feedback welcome.
-PS: a more up-to-date version may be available on my web site.
-PPS: a changelog is available here: http://hermitte.free.fr/vim/ressources/vimfiles/ftplugin/cpp/changelog
+http://github.com/vim-scripts/lh-cpp
